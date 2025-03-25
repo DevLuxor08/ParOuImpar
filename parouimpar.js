@@ -14,6 +14,7 @@ var mensagemClc = "";
 var resto = 0;
 
 const partes = numeroJs.value.split(/[.,]./)
+if(partes[1])
 
 // coletar o valor digitado no numero
 //numero = numeroJs.
