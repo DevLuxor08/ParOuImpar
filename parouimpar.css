@@ -37,6 +37,17 @@ label{
 
 button{
     background-color: rgb(219, 165, 95) ;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
+
+/* Para eliminar o auto Incremento nos type */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; margin: 0;}
+
+/* Input Microsoft edge */
+input[type=number]{appearance: textfield;}
 
