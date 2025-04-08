@@ -15,7 +15,10 @@
         <main>
             <div id="informacoes">
                 <label for="numero">Número Inteiro: </label>
-                <input type="number" id="numero" required autofocus placeholder="Informe um Número Inteiro" >
+                <input type="number" id="numero" required autofocus placeholder="Informe um Número Inteiro"  step="1"
+                onkeydown="FiltrarEntrada"
+                onpaste="handlePaste(event)"
+                >
                 <button id="mostrarResultado">Mostrar o Resultado</button>
             </div>
 

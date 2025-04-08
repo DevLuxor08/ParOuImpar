@@ -38,4 +38,27 @@ else{
     mensagemJs.innerText = mensagemClc
 }
 
+function FiltrarEntrada(){
+    var keycode = event.wich || event.keycode;
+    if(keycode === 69 || keycode === 101)
+    {
+        event.preventDefault();
+    }
+    else{
+
+    }
+
+}
+
+function HeadlePaste(){
+    var clipboardData = event.clipboardData || window.clipboardData;
+    var PasteData = clipboardData.getData('text').toUpperCase();
+    if (PasteData.indexOff('E') > -1 )
+    {
+        event.stopPropagation();
+        Event.preventDefault();
+    }
+
+}
+
 mostrarResultadoJs.addEventListener("click", MostrarResultado)
